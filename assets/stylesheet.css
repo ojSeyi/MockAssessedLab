@@ -5,12 +5,9 @@ body{
 }
 
 #logo{
-    max-width: 300px;
-    float: left;
+    width: 300px;
 }
-main{
-    max-width: 960px;
-}
+
 header>h1{
     font-family: "Roboto", sans-serif;
     font-weight: bold;
@@ -21,4 +18,16 @@ header>h2{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 30px;
+}
+
+footer{
+    background-color: #363636;
+    padding: 10px;
+}
+
+footer>p{
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    colour: white;
 }
