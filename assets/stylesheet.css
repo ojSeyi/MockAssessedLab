@@ -27,7 +27,6 @@ footer{
 
 footer>p{
     max-width: inherit;
-    margin-right: auto;
-    margin-left: auto;
-    colour: white;
+    text-align: center;
+    color: white;
 }
