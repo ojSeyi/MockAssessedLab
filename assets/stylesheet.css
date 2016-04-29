@@ -34,8 +34,7 @@ header{
 
 #bugitem>p{
     width: 576px;
-    border-bottom: thin;
-    border-style: solid;
+    border-bottom: 1px solid black;
 }
 
 #bugitem>h3{
