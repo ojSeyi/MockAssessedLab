@@ -12,8 +12,8 @@ include ("db_connection.php");
         echo "Enter all values";
     }else {
         $bugname = $_POST['bugname'];
-        $bugname = $_POST['category'];
-        $bugname = $_POST['summary'];
+        $bugcategory = $_POST['category'];
+        $bugsummary = $_POST['summary'];
 
         $getbugs = "INSERT INTO bugs(bugname, bugcategory, bugsummary) VALUES ($bugname, $bugcategory, $bugsummary)";
         $result = mysqli_query($db, $getbugs);
