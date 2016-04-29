@@ -16,8 +16,8 @@
 <header class="grid-container">
     <img src="assets/images/trackerlogo.png" alt="Bug Tracker" id="logo" class="grid-30"/>
     <div id="title" class="grid-60">
-    <h1>BugTracker</h1>
-    <h2>Keep track of all the pesky little bugs</h2>
+        <h1>BugTracker</h1>
+        <h2>Keep track of all the pesky little bugs</h2>
     </div>
 </header>
 
@@ -34,21 +34,16 @@
     </nav>
 
     <section class="grid-70">
-        <form>
-            <label>Bug Name</label>
-            <input type="text" name="bugName" required><br><br>
-            <label>Bug Summary</label>
-            <textarea name="summary" rows="4" cols="30" placeholder="Enter text here..." required></textarea><br><br>
-            <label>Bug Category</label>
-            <select name="category" size="1" required>
-                <option>Android</option>
-                <option>iOS</option>
-                <option>Windows</option>
-            </select><br><br>
-            <input type="submit" value="submit">
-        </form>
+        <div id="bugitem">
+            <?php
+
+            ?>
 
 
+            <h3>Bug Name: StageFrightBug</h3><br>
+            <h4>Bug Category: AndroidBug </h4><br>
+            <p>Stagefright is the collective name for a group of software bugs, that affect versions 2.2 and newer of the Android operating system, allowing an attacker to perform arbitrary operations on the victim device through remote code execution and privilege escalation.</p>
+        </div>
     </section>
 
 </main>
