@@ -33,6 +33,8 @@ header{
 #bugitem>p{
     width: 576px;
     border-bottom: inherit;
+    display: block;
+    padding: 10px 10px;
 }
 
 #bugitem>h3{
@@ -43,6 +45,8 @@ header{
 }
 #bugitem>h5{
     margin-bottom: 10px;
+    display: block;
+    padding: 10px 10px;
 }
 
 header>#title>h1{
