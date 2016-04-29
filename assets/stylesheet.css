@@ -4,6 +4,15 @@ body{
     margin-right: auto;
 }
 
+form{
+    margin: 30px;
+}
+form>label{
+    display: block;
+    width: 100px;
+    float: left;
+}
+
 #logo{
     width: 300px;
 }
@@ -19,6 +28,19 @@ header{
 
 #bugitem{
     border-bottom: dashed;
+    width: 576px;
+}
+
+#bugitem>p{
+    width: 576px;
+}
+
+#bugitem>h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#bugitem>h5{
+    margin-bottom: 10px;
 }
 
 header>#title>h1{
