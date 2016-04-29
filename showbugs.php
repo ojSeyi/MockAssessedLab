@@ -45,11 +45,7 @@
                     echo "<p>". $row['bugsummary'] . "</p>";
                 }
             ?>
-
-
-            <h3>Bug Name: StageFrightBug</h3><br>
-            <h4>Bug Category: AndroidBug </h4><br>
-            <p>Stagefright is the collective name for a group of software bugs, that affect versions 2.2 and newer of the Android operating system, allowing an attacker to perform arbitrary operations on the victim device through remote code execution and privilege escalation.</p>
+            
         </div>
     </section>
 
