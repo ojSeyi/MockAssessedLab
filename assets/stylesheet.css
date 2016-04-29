@@ -23,7 +23,7 @@ form>label{
 
 header{
     border-color: cornflowerblue;
-    border-style: dotted;
+
 }
 
 #bugitem{
@@ -33,6 +33,7 @@ header{
 
 #bugitem>p{
     width: 576px;
+    border-style: dotted;
 }
 
 #bugitem>h3{
