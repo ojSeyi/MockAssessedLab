@@ -39,11 +39,13 @@
                 include ("db_connection.php");
                 $getbugs = "SELECT * FROM Bugs";
                 $result = mysqli_query($db, $getbugs);
-                while($result){
+                if($result){
                     $row = mysqli_fetch_array($result);
                     for($a=1; $a<mysqli_num_rows($result); $a++){
                         echo mysqli_fetch_row($result);
                     }
+                }else{
+                    echo "Sorry can't process request ". mysqli_error();
                 }
 
             ?>
