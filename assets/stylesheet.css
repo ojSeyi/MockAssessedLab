@@ -22,18 +22,18 @@ form>label{
 }
 
 header{
-    border-color: cornflowerblue;
+
 
 }
 
 #bugitem{
-    border-bottom: dashed;
     width: 576px;
 }
 
 #bugitem>p{
     width: 576px;
-    border-style: dotted;
+    border-bottom: inherit;
+
 }
 
 #bugitem>h3{
