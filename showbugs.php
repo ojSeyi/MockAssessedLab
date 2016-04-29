@@ -45,7 +45,7 @@
                     echo "<p>". $row['bugsummary'] . "</p>";
                 }
             ?>
-            
+
         </div>
     </section>
 
