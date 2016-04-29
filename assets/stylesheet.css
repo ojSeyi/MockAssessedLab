@@ -32,7 +32,7 @@ header{
 
 #bugitem>p{
     width: 576px;
-    border-bottom: inherit;
+    border-bottom: 576px;
 
 }
 
