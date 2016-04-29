@@ -8,12 +8,12 @@
 
 <?php
 include ("db_connection.php");
-    if(empty($_POST['bugname']) || empty($_POST['bugcategory']) || empty($_POST['bugsummary'])){
+    if(empty($_POST['bugname']) || empty($_POST['category']) || empty($_POST['summary'])){
         echo "Enter all values";
     }else {
         $bugname = $_POST['bugname'];
-        $bugname = $_POST['bugcategory'];
-        $bugname = $_POST['bugsummary'];
+        $bugname = $_POST['category'];
+        $bugname = $_POST['summary'];
 
         $getbugs = "INSERT INTO bugs(bugname, bugcategory, bugsummary) VALUES ($bugname, $bugcategory, $bugsummary)";
         $result = mysqli_query($db, $getbugs);
