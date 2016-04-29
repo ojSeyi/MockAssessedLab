@@ -14,7 +14,11 @@ body{
 
 header{
     border-color: cornflowerblue;
-    border-style: dotted;;
+    border-style: dotted;
+}
+
+#bugitem{
+    border-bottom: dashed;
 }
 
 header>#title>h1{
