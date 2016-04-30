@@ -40,29 +40,27 @@
             if($_GET['bugcategory']=="android"){
                 $getbugs = "SELECT 'android' FROM Bugs";
                 $result = mysqli_query($db, $getbugs);
-                while ($row = mysqli_fetch_array($result)) {
                     echo "<h3>". $row['bugname'] . "</h3>";
                     echo "<h5>". $row['bugcategory'] . "</h5>";
                     echo "<p>". $row['bugsummary'] . "</p>";
-                }
+
             }elseif($_GET['bugcategory']=="ios"){
                 $order=$_GET['bugcategory'];
                 $getbugs = "SELECT '$ios' FROM Bugs";
                 $result = mysqli_query($db, $getbugs);
-                while ($row = mysqli_fetch_array($result)) {
                     echo "<h3>". $row['bugname'] . "</h3>";
                     echo "<h5>". $row['bugcategory'] . "</h5>";
                     echo "<p>". $row['bugsummary'] . "</p>";
-                }
+
             }elseif($_GET['bugcategory']=="windows"){
                 $order=$_GET['bugcategory'];
                 $getbugs = "SELECT 'windows' FROM Bugs";
                 $result = mysqli_query($db, $getbugs);
-                while ($row = mysqli_fetch_array($result)) {
+
                     echo "<h3>". $row['bugname'] . "</h3>";
                     echo "<h5>". $row['bugcategory'] . "</h5>";
                     echo "<p>". $row['bugsummary'] . "</p>";
-                }
+                
             }else{
 
                 $getbugs = "SELECT * FROM Bugs";
