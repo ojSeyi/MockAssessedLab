@@ -38,29 +38,31 @@
             <?php
                 include ("db_connection.php");
             if($_GET['bugcategory']=="android"){
-                $getbugs = "SELECT * FROM Bugs where bugcategory='android'";
+                $getbugs = "SELECT * FROM Bugs where bugcategory like '%android%'";
                 $result = mysqli_query($db, $getbugs);
+                while ($row = mysqli_fetch_array($result)) {
                     echo "<h3>". $row['bugname'] . "</h3>";
                     echo "<h5>". $row['bugcategory'] . "</h5>";
                     echo "<p>". $row['bugsummary'] . "</p>";
-
+                }
             }elseif($_GET['bugcategory']=="ios"){
                 $order=$_GET['bugcategory'];
-                $getbugs = "SELECT * FROM Bugs where bugcategory='ios'";
+                $getbugs = "SELECT * FROM Bugs where bugcategory='%ios%'";
                 $result = mysqli_query($db, $getbugs);
+                while ($row = mysqli_fetch_array($result)) {
                     echo "<h3>". $row['bugname'] . "</h3>";
                     echo "<h5>". $row['bugcategory'] . "</h5>";
                     echo "<p>". $row['bugsummary'] . "</p>";
-
+                }
             }elseif($_GET['bugcategory']=="windows"){
                 $order=$_GET['bugcategory'];
-                $getbugs = "SELECT * FROM Bugs where bugcategory='windows'";
+                $getbugs = "SELECT * FROM Bugs where bugcategory='%windows%'";
                 $result = mysqli_query($db, $getbugs);
-
+                while ($row = mysqli_fetch_array($result)) {
                     echo "<h3>". $row['bugname'] . "</h3>";
                     echo "<h5>". $row['bugcategory'] . "</h5>";
                     echo "<p>". $row['bugsummary'] . "</p>";
-
+                }
             }else{
 
                 $getbugs = "SELECT * FROM Bugs";
