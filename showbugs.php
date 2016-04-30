@@ -25,11 +25,11 @@
 <main class="grid-container">
     <nav class="grid-30">
         <ul>
-            <li><a href="showbugs.php">All Bug Items</a></li>
-            <li><a href="showbugs.php">Android Bug Items</a></li>
-            <li><a href="showbugs.php">iOS Bug Items</a></li>
-            <li><a href="showbugs.php">Windows Bug Items</a></li>
-            <li><a href="addbug.php">Insert Bug Items</a></li>
+            <li><a href='showbugs.php'>All Bug Items</a></li>
+            <li>.<a href='showbugs.php?bugcategory=android'>Android Bug Items</a></li>
+            <li><a href='showbugs.php?bugcategory=ios'>iOS Bug Items</a></li>
+            <li><a href='showbugs.php?bugcategory=windows'>Windows Bug Items</a></li>
+            <li><a href='addbug.php'>Insert Bug Items</a></li>
         </ul>
     </nav>
 
@@ -37,6 +37,35 @@
         <div id="bugitem">
             <?php
                 include ("db_connection.php");
+            if($_GET['bugcategory']=="android"){
+                $order=$_GET['bugcategory'];
+                $getbugs = "SELECT $order FROM Bugs";
+                $result = mysqli_query($db, $getbugs);
+                while ($row = mysqli_fetch_array($result)) {
+                    echo "<h3>". $row['bugname'] . "</h3>";
+                    echo "<h5>". $row['bugcategory'] . "</h5>";
+                    echo "<p>". $row['bugsummary'] . "</p>";
+                }
+            }elseif($_GET['bugcategory']=="ios"){
+                $order=$_GET['bugcategory'];
+                $getbugs = "SELECT $order FROM Bugs";
+                $result = mysqli_query($db, $getbugs);
+                while ($row = mysqli_fetch_array($result)) {
+                    echo "<h3>". $row['bugname'] . "</h3>";
+                    echo "<h5>". $row['bugcategory'] . "</h5>";
+                    echo "<p>". $row['bugsummary'] . "</p>";
+                }
+            }elseif($_GET['bugcategory']=="windows"){
+                $order=$_GET['bugcategory'];
+                $getbugs = "SELECT $order FROM Bugs";
+                $result = mysqli_query($db, $getbugs);
+                while ($row = mysqli_fetch_array($result)) {
+                    echo "<h3>". $row['bugname'] . "</h3>";
+                    echo "<h5>". $row['bugcategory'] . "</h5>";
+                    echo "<p>". $row['bugsummary'] . "</p>";
+                }
+            }else{
+
                 $getbugs = "SELECT * FROM Bugs";
                 $result = mysqli_query($db, $getbugs);
                 while ($row = mysqli_fetch_array($result)) {
@@ -44,6 +73,7 @@
                     echo "<h5>". $row['bugcategory'] . "</h5>";
                     echo "<p>". $row['bugsummary'] . "</p>";
                 }
+            }
             ?>
 
         </div>
