@@ -81,7 +81,7 @@ nav>ul>li>a{
     font-size: 18px;
 }
 
-nav>li>a:hover{
+nav>ul>li>a:hover{
     color: deepskyblue;
 }
 
