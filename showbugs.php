@@ -39,7 +39,7 @@
                 include ("db_connection.php");
             if($_GET['bugcategory']=="android"){
                 $order=$_GET['bugcategory'];
-                $getbugs = "SELECT $order FROM Bugs";
+                $getbugs = "SELECT '$order' FROM Bugs";
                 $result = mysqli_query($db, $getbugs);
                 while ($row = mysqli_fetch_array($result)) {
                     echo "<h3>". $row['bugname'] . "</h3>";
@@ -48,7 +48,7 @@
                 }
             }elseif($_GET['bugcategory']=="ios"){
                 $order=$_GET['bugcategory'];
-                $getbugs = "SELECT $order FROM Bugs";
+                $getbugs = "SELECT '$order'' FROM Bugs";
                 $result = mysqli_query($db, $getbugs);
                 while ($row = mysqli_fetch_array($result)) {
                     echo "<h3>". $row['bugname'] . "</h3>";
@@ -57,7 +57,7 @@
                 }
             }elseif($_GET['bugcategory']=="windows"){
                 $order=$_GET['bugcategory'];
-                $getbugs = "SELECT $order FROM Bugs";
+                $getbugs = "SELECT '$order' FROM Bugs";
                 $result = mysqli_query($db, $getbugs);
                 while ($row = mysqli_fetch_array($result)) {
                     echo "<h3>". $row['bugname'] . "</h3>";
