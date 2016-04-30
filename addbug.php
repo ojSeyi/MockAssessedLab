@@ -25,14 +25,14 @@
 <main class="grid-container">
     <nav class="grid-30">
         <?php
-        echo 
+        echo
         "<ul>
-            <li><a href='showbugs.php'>All Bug Items</a></li>
-            <li><a href='showbugs.php'>Android Bug Items</a></li>
-            <li><a href='showbugs.php'>iOS Bug Items</a></li>
-            <li><a href='showbugs.php'>Windows Bug Items</a></li>
-            <li><a href='addbug.php'>Insert Bug Items</a></li>
-        </ul>"
+            <li><a href='showbugs.php'>All Bug Items</a></li>".
+            "<li>".$android = 'adro'."<a href='showbugs.php?type=$android'>"."Android Bug Items</a></li>".
+            "<li>".$ios = 'ios'."<a href='showbugs.php?type=$ios'>"."iOS Bug Items</a></li>".
+            "<li>".$windows = 'wind'."<a href='showbugs.php?type=$windows'>"."Windows Bug Items</a></li>".
+            "<li><a href='addbug.php'>Insert Bug Items</a></li>
+        </ul>";
         ?>
     </nav>
 
