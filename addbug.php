@@ -24,13 +24,16 @@
 
 <main class="grid-container">
     <nav class="grid-30">
-        <ul>
-            <li><a href="showbugs.php">All Bug Items</a></li>
-            <li><a href="showbugs.php">Android Bug Items</a></li>
-            <li><a href="showbugs.php">iOS Bug Items</a></li>
-            <li><a href="showbugs.php">Windows Bug Items</a></li>
-            <li><a href="addbug.php">Insert Bug Items</a></li>
-        </ul>
+        <?php
+        echo 
+        "<ul>
+            <li><a href='showbugs.php'>All Bug Items</a></li>
+            <li><a href='showbugs.php'>Android Bug Items</a></li>
+            <li><a href='showbugs.php'>iOS Bug Items</a></li>
+            <li><a href='showbugs.php'>Windows Bug Items</a></li>
+            <li><a href='addbug.php'>Insert Bug Items</a></li>
+        </ul>"
+        ?>
     </nav>
 
     <section class="grid-70">
