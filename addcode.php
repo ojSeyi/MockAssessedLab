@@ -18,5 +18,5 @@ include ("db_connection.php");
         $getbugs = "INSERT INTO bugs(bugname, bugcategory, bugsummary) VALUES ('$bugname', '$bugcategory', '$bugsummary')";
         $result = mysqli_query($db, $getbugs);
 
-        header("showbugs.php");
+        header("Location: showbugs.php");
     }
