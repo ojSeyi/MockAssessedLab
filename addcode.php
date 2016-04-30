@@ -8,7 +8,7 @@
 
 <?php
 include ("db_connection.php");
-    if(empty($_POST['bugname']) || empty($_POST['category']) || empty($_POST['summary'])){
+    if(empty($_POST['bugName']) || empty($_POST['category']) || empty($_POST['summary'])){
         echo "Enter all values";
     }else {
         $bugname = $_POST['bugname'];
