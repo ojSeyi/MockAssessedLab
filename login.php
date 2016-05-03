@@ -12,8 +12,7 @@
         if($result){
             header("Location: index.php");
         }else{
-            header("Location: index.php");
-            
+            echo "Incorrect username and password";
         }
     }
 ?>
