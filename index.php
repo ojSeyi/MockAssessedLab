@@ -20,7 +20,7 @@
 1           <h1>BugTracker</h1>
             <form action="login.php" method="post">
                 <label>Username</label>
-                <input type="text" name="username"/><br>
+                <input type="text" name="username"/><br><br>
                 <label>Password</label>
                 <input type="text" name="password"/>
             </form>
