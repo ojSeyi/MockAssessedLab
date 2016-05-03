@@ -10,7 +10,7 @@
         $sql = "SELECT uid FROM users WHERE username = '$username' AND password = '$password'";
         $result = mysqli_query($db, $sql);
         if(mysqli_num_rows($result)==1){
-            header("Location: index.php");
+            header("Location: showbugs.php");
         }else{
             echo "Incorrect username and password" . mysqli_error();
         }
