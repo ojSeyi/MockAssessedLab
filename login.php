@@ -9,7 +9,7 @@
 
         $sql = "SELECT * FROM users WHERE username = $username AND password = $password";
         $result = mysqli_query($db, $sql);
-        if($result){
+        if(mysqli_fetch_assoc($result)){
             header("Location: index.php");
         }else{
             echo "Incorrect username and password" . mysqli_error();
