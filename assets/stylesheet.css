@@ -47,7 +47,7 @@ header{
 }
 
 header>#title>#io{
-    float: left;    
+    float: left;
 }
 
 header>#title>#io>h1{
@@ -57,7 +57,7 @@ header>#title>#io>h1{
     font-size: 40px;
 }
 
-header>#title>#io>h2{
+header>#title>h2{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 25px;

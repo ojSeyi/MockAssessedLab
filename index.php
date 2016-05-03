@@ -18,8 +18,14 @@
     <div id="title" class="grid-60">
         <div id="io">
 1           <h1>BugTracker</h1>
-            <h2>Keep track of all the pesky little bugs</h2>
+            <form action="login.php" method="post">
+                <label>Username</label>
+                <input type="text" name="username"/>
+                <label>Password</label>
+                <input type="text" name="password"/>
+            </form>
         </div>
+        <h2>Keep track of all the pesky little bugs</h2>
     </div>
 </header>
 
