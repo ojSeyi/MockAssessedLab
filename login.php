@@ -12,7 +12,7 @@
         if($result){
             header("Location: index.php");
         }else{
-            echo "Incorrect username and password";
+            echo "Incorrect username and password" . mysqli_error();
         }
     }
 ?>
