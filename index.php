@@ -16,8 +16,10 @@
 <header class="grid-container">
     <img src="assets/images/trackerlogo.png" alt="Bug Tracker" id="logo" class="grid-30"/>
     <div id="title" class="grid-60">
-        <h1>BugTracker</h1>
-        <h2>Keep track of all the pesky little bugs</h2>
+        <div id="io">
+1           <h1>BugTracker</h1>
+            <h2>Keep track of all the pesky little bugs</h2>
+        </div>
     </div>
 </header>
 

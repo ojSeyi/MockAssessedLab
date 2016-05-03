@@ -46,14 +46,18 @@ header{
     margin-bottom: 10px;
 }
 
-header>#title>h1{
+header>#title>#io{
+    float: left;    
+}
+
+header>#title>#io>h1{
 
     font-family: "Roboto", sans-serif;
     font-weight: bolder;
     font-size: 40px;
 }
 
-header>#title>h2{
+header>#title>#io>h2{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 25px;
