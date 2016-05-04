@@ -16,46 +16,37 @@
 <header class="grid-container">
     <img src="assets/images/trackerlogo.png" alt="Bug Tracker" id="logo" class="grid-30"/>
     <div id="title" class="grid-60">
-        <div id="io">
-            1           <h1>BugTracker</h1>
-            <form action="login.php" method="post">
-                <label>Username</label>
-                <input type="text" name="username"/><br><br>
-                <label>Password</label>
-                <input type="password" name="password"/><br><br>
-                <input type="submit" value="login"/>
-            </form>
-        </div>
+1       <h1>BugTracker</h1>
         <h2>Keep track of all the pesky little bugs</h2>
     </div>
 </header>
 
 <main class="grid-container">
-    <nav class="grid-30">
-        <ul>
-            <li><a href='showbugs.php'>All Bug Items</a></li>
-            <li><a href='showbugs.php?bugcategory=android'>Android Bug Items</a></li>
-            <li><a href='showbugs.php?bugcategory=ios'>iOS Bug Items</a></li>
-            <li><a href='showbugs.php?bugcategory=windows'>Windows Bug Items</a></li>
-            <li><a href='addbug.php'>Insert Bug Items</a></li>
-        </ul>
-    </nav>
+        <nav class="grid-30">
+            <ul>
+                <li><a href='showbugs.php'>All Bug Items</a></li>
+                <li><a href='showbugs.php?bugcategory=android'>Android Bug Items</a></li>
+                <li><a href='showbugs.php?bugcategory=ios'>iOS Bug Items</a></li>
+                <li><a href='showbugs.php?bugcategory=windows'>Windows Bug Items</a></li>
+                <li><a href='addbug.php'>Insert Bug Items</a></li>
+            </ul>
+        </nav>
 
-    <section class="grid-70">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam metus neque, commodo eu odio vel, cursus lacinia mauris. Curabitur dapibus lacinia laoreet. Vivamus quis tortor accumsan, ultricies ligula eu, pretium urna. Fusce eget commodo massa, id iaculis lorem. Nunc aliquet elit sed risus interdum, eget rutrum tellus efficitur. Fusce suscipit at dolor id eleifend. Aliquam sem quam, porta ut ullamcorper in, eleifend nec nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam malesuada luctus leo eget finibus.
+        <section class="grid-70">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam metus neque, commodo eu odio vel, cursus lacinia mauris. Curabitur dapibus lacinia laoreet. Vivamus quis tortor accumsan, ultricies ligula eu, pretium urna. Fusce eget commodo massa, id iaculis lorem. Nunc aliquet elit sed risus interdum, eget rutrum tellus efficitur. Fusce suscipit at dolor id eleifend. Aliquam sem quam, porta ut ullamcorper in, eleifend nec nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam malesuada luctus leo eget finibus.
 
-            Duis leo elit, blandit vitae commodo nec, congue id lectus. Donec augue purus, sollicitudin id vehicula eget, posuere id velit. Vestibulum pulvinar neque eget libero fringilla, eget accumsan eros gravida. Fusce gravida eu libero at vestibulum. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec commodo at diam sodales fermentum. Maecenas blandit sapien id sapien imperdiet efficitur. Sed a elit ornare turpis feugiat ullamcorper. Donec non ipsum nibh.
+                Duis leo elit, blandit vitae commodo nec, congue id lectus. Donec augue purus, sollicitudin id vehicula eget, posuere id velit. Vestibulum pulvinar neque eget libero fringilla, eget accumsan eros gravida. Fusce gravida eu libero at vestibulum. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec commodo at diam sodales fermentum. Maecenas blandit sapien id sapien imperdiet efficitur. Sed a elit ornare turpis feugiat ullamcorper. Donec non ipsum nibh.
 
-            Phasellus blandit commodo rutrum. Sed eget feugiat ex. Aliquam egestas justo ac iaculis aliquet. Duis id orci ut dolor finibus ullamcorper. Pellentesque tincidunt condimentum dapibus. Sed ac ornare sapien. Etiam fermentum nibh nec mauris egestas, eleifend cursus ipsum luctus.
+                Phasellus blandit commodo rutrum. Sed eget feugiat ex. Aliquam egestas justo ac iaculis aliquet. Duis id orci ut dolor finibus ullamcorper. Pellentesque tincidunt condimentum dapibus. Sed ac ornare sapien. Etiam fermentum nibh nec mauris egestas, eleifend cursus ipsum luctus.
 
-            Morbi porta enim quis ex imperdiet iaculis. Curabitur vel nisi sit amet ligula gravida hendrerit a nec nulla. Phasellus in laoreet elit, sit amet dapibus purus. Quisque aliquet, urna non pellentesque rutrum, mauris felis maximus magna, a dictum erat elit non urna. Proin eget mi vitae tellus lacinia condimentum quis ut erat. Aliquam iaculis feugiat mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-    </section>
+                Morbi porta enim quis ex imperdiet iaculis. Curabitur vel nisi sit amet ligula gravida hendrerit a nec nulla. Phasellus in laoreet elit, sit amet dapibus purus. Quisque aliquet, urna non pellentesque rutrum, mauris felis maximus magna, a dictum erat elit non urna. Proin eget mi vitae tellus lacinia condimentum quis ut erat. Aliquam iaculis feugiat mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        </section>
 
-</main>
+    </main>
 
 
-<footer>
-    <p>Designed by Oluwaseyi Nojimu-Yusuf, 2016 (c).</p>
-</footer>
+    <footer>
+        <p>Designed by Oluwaseyi Nojimu-Yusuf, 2016 (c).</p>
+    </footer>
 </body>
 </html>
