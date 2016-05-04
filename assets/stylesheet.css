@@ -57,6 +57,13 @@ header>#title>#io>h1{
     font-size: 40px;
 }
 
+header>#title>h1{
+
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
 header>#title>h2{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
